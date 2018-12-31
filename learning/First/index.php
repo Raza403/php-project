@@ -53,29 +53,65 @@
     // echo "<br>";
 
     // Integers
-$num = 10;
-echo $num;
-$num++;
-echo "<br>";
-echo $num;
-echo "<br>";
+// $num = 10;
+// echo $num;
+// $num++;
+// echo "<br>";
+// echo $num;
+// echo "<br>";
 
 
-    echo 33;
-    echo "<br>";
-    echo -11;
-    echo "<br>";
-    echo 12.23;
-    echo "<br>";
-    echo 5/3;
-    echo "<br>";
-    echo 10%3;
-    echo "<br>";
-    echo (4 + 5) *10;
-    echo "<br>";
+//     echo 33;
+//     echo "<br>";
+//     echo -11;
+//     echo "<br>";
+//     echo 12.23;
+//     echo "<br>";
+//     echo 5/3;
+//     echo "<br>";
+//     echo 10%3;
+//     echo "<br>";
+//     echo (4 + 5) *10;
+//     echo "<br>";
+// $num = 10;
+// $num += 25;
+// echo $num;
+// $num -= 25;
+// echo $num;
+// $num *= 25;
+// echo $num;
+// $num /= 25;
+// echo $num;
+// Absolute number
+// echo abs(-100);
+// 2 raise power of 4 = 16
+// echo pow(2,4);
+// Square root
+// echo sqrt(4);
+// Compare and tells which one is bigger
+// echo max(2, 10);
+// Compares and tells which number is smaller
+// echo min(2,10);
+// Rounding
+// echo round(3.7);
+// Ceiling will always go up, below will give 4
+// echo ceil(3.2);
+// Rounding down with floor, this will give 3
+// echo floor(3.7);
 
+
+// Getting input from users
 
     ?>
+    <form action="index.php" method="get">
+    Name: <input type="text" name="name">
+    Age: <input type="number" name="age">
+    <input type="submit">
+    </form>
+    <br>
+    Your name is <?php echo $_GET["name"]; ?>
+    <br>
+    Your age is <?php echo $_GET["age"]; ?>
 </body>
 
 </html>
